@@ -1,0 +1,214 @@
+@charset "utf-8"
+
+header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 50px;
+  border: 10px solid #ccc;
+}
+
+body {
+  font-size: 14px;
+  font-family: Verdana, sans-selif;
+  }
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 2;
+}
+
+h2 {
+  width: 638px;
+}
+
+h3 {
+  font-size: 20px;
+  color: gray;
+  margin: 0 auto;
+}
+
+.user-name {
+  padding-top: 18px;
+ font-size: 20px;
+}
+
+.left-content {
+  width: 638px;
+  height: 100%;
+  float: left;
+}
+
+.right-content {
+  width: 300px;
+  height: 100%;
+  float: left;
+  padding-left: 50px;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* 左 */
+.plans {
+  margin-left: 10px;
+  background-color: white;
+  height: 100%;
+}
+
+.trip-plan {
+width: 620px;
+}
+
+h2.trip-plan {
+  padding-left: 10px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.trip-title {
+  width: 600px;
+  height: 64;
+  margin-bottom: 90px;
+  background-color: white;
+  margin: 50px 0px 50px 10px;
+}
+
+h3.trip-title {
+  width: 500px;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+}
+
+.contain1 {
+  height: 100px;
+  margin: 0 auto;
+  background-color: white;
+  padding-left: 10px;
+}
+
+.contain2 {
+  height: 200px;
+  margin: 0 auto;
+  background-color: white;
+  padding-left: 10px;
+  margin-left: 10px;
+
+}
+
+.trip_image {
+  width: 600px;
+  height: 480px;
+  margin: 20px 15px 20px 15px;
+}
+
+.planner_img {
+  width: 60px;
+  height: 60px;
+  border: 0 solid #fff;
+  border-radius: 60px;
+  float: left;
+  margin: 0 15px;
+  word-wrap: break-word;
+}
+
+.plan-contents {
+  margin-bottom: 90px;
+  background-color: white;
+}
+
+
+.pull-left {
+  float: left;
+  padding: 10px 20px 10px 0;
+  border: 1px solid #ccc;
+}
+
+.content1: {
+  width: 359px;
+  height: 32px;
+  padding: 10px 0;
+  border: 1px solid #ccc;
+}
+
+.content3:last-child {
+  margin-bottom: 0;
+  background-color: white;
+}
+
+tr {
+  padding: 20px;
+}
+
+td {
+  margin:10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* 右 */
+.states {
+  padding: 10px 10px 30px 10px;
+  border: 1px solid white;
+}
+
+.comment {
+  padding: 10px 10px 30px 10px;
+  border: 1px solid white;
+}
+
+h2.description {
+  font-size: 15px;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.pull-right {
+  float: right;
+  padding-left: 40px;
+}
+
+.show-btn1 {
+  display: inline-block;
+  width: 250px;
+  line-height: 45px;
+  background: white;
+  border: 1px solid #ccc;
+  text-align: center;
+  color: #f39800;
+  border-radius: 5px;
+  opacity: 0.9;
+  margin: 10px 183px;
+}
+
+.show-btn2 {
+  display: inline-block;
+  width: 250px;
+  line-height: 45px;
+  background: white;
+  border: 1px solid #ccc;
+  text-align: center;
+  color: #f39800;
+  border-radius: 5px;
+  opacity: 0.9;
+  margin: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+}

@@ -1,0 +1,37 @@
+body {
+  font-size: 14px;
+  color: #333;
+  margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+
+.user_nav {
+  height: 10px;
+  width: 96px;
+  background-color: #303030;
+}
+
+.grid-6
+{
+  height: 10px;
+  width: 96px;
+  background-color: #494949;
+}
+
+.post {
+  text-align: right;
+  display: block;
+  margin: 8px 8px 0 0;
+}
+
+/* fotter */
+
+footer {
+ padding: 90px 0;
+ text-align: center;
+ color: #ccc;
+}

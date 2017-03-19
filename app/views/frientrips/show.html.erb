@@ -1,0 +1,108 @@
+<header>
+  <div class="header">
+    <h1>FRIENTRIP</h1>
+  </div>
+</header>
+
+<!-- 左側 -->
+<div class="contents clearfix">
+  <div class="left-content">
+
+
+    <div class="plans">
+      <!-- 企画書 -->
+      <h2 class="trip-plan">企画書</h2>
+
+      <!-- タイトル -->
+      <div class="trip-title">
+        <h3 class="trip-title">ウユニ塩湖にいこう</h3>
+      </div>
+
+      <!-- 画像 -->
+      <div class="trip-image">
+       <%= image_tag("newtop.jpeg", :class => "trip_image") %>
+     </div>
+
+     <!-- ユーザーネーム  -->
+     <div class ="contain1">
+      <div class="desc pull-left">
+        <ul>
+          <li>
+           <div class="user">
+            <%= image_tag("profile.JPG", :class => "planner_img") %>
+          </div>
+        </li>
+        <li>
+          <div class="user-name">
+            <div> Maasa Yokota </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div><!-- plan閉じタグ -->
+
+
+<!-- プラン -->
+<div class="contain2">
+ <h2>企画詳細</h2>
+ <div class="plan-contents">
+   <table>
+     <caption>企画の詳細を詰めていきましょう</caption>
+     <tr>
+      <th>日程</th>
+      <td>3/10~3/20</td>
+    </tr>
+    <tr>
+      <th>行き先</th>
+      <td>ボリビア</td>
+    </tr>
+    <tr>
+      <th>やりたいこと</th>
+      <td>湖の上でジャンプ！マチュピチュにも行きたい</td>
+    </tr>
+  </table>
+
+</div>
+</div><!-- プラン閉じ -->
+<a class="show-btn1" href="#">保存する<i class="fa fa-external-link" aria-hidden="true"></i></a>
+</div><!-- 左側閉じ -->
+
+<!-- 右側 -->
+<div class="right-content">
+  <!-- いいねぼたん -->
+  <h2 class="description">あなたの申し込み状況</h2>
+  <div class="states">
+   <h3>申し込み済</h3>
+   <a class="show-btn2" href="#">いいね！<i class="fa fa-external-link" aria-hidden="true"></i></a>
+ </div>
+
+ <h2 class="description">コメントを記入</h2>
+ <div class="comment">
+   <!-- ここからフォーム -->
+   <% if current_user %>
+   <%= form_tag("/plans/#{@plan.id}/comments", method: :post) do %>
+   <textarea cols="30" name="text" placeholder="コメントする" rows="2"></textarea>
+   <input type="submit" value="SENT">
+   <% end %>
+   <% end %>
+   <a class="show-btn2" href="#">投稿する<i class="fa fa-external-link" aria-hidden="true"></i></a>
+ </div>
+
+ <!-- コメント機能 -->
+<div class="comments">   
+      <h4>＜コメント一覧＞</h4>
+      <% if @comments %>
+        <% @comments.each do |comment| %>
+          <p>
+           <!--  <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong> -->
+            <%= comment.text %>
+          </p>
+        <% end %>
+      <% end %>
+    </div>
+</div><!-- right-content閉じ -->
+
+
+</div><!-- clearfix -->

@@ -1,0 +1,90 @@
+<header>
+  <div class="header">
+    <h1>FRIENTRIP</h1>
+  </div>
+</header>
+
+
+<div class="new-plans">
+  <!-- 企画書 -->
+  <h2 class="trip-plan">企画書</h2>
+
+  <!-- タイトル -->
+  <div class="trip-title">
+    <h3 class="trip-title">ウユニ塩湖にいこう</h3>
+  </div>
+
+  <!-- 画像 -->
+  <div class="trip-image">
+   <%= image_tag("newtop.jpeg", :class => "trip_image") %>
+ </div>
+
+ <!-- ユーザーネーム  -->
+ <div class ="new-contain1">
+  <div class="desc pull-left">
+    <ul>
+      <li>
+       <div class="user">
+        <%= image_tag("profile.JPG", :class => "planner_img") %>
+      </div>
+    </li>
+    <li>
+      <div class="user-name">
+        <div> Maasa Yokota </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+
+</div><!-- plans閉じタグ -->
+
+
+<!-- プラン -->
+<div class="new-contain2">
+ <h2>企画詳細</h2>
+ <div class="plan-contents">
+   <table>
+     <caption>企画の詳細を詰めていきましょう</caption>
+     <tr>
+      <th>日程</th>
+      <td>
+
+      </td>
+    </tr>
+    <tr>
+      <th>行き先</th>
+      <td>ボリビア</td>
+    </tr>
+    <tr>
+      <th>やりたいこと</th>
+      <td>湖の上でジャンプ！マチュピチュにも行きたい</td>
+    </tr>
+  </table>
+
+  <div class="contents row">
+    <%= form_tag('/frientrips', method: :post) do %>
+    <h3>
+      投稿する
+    </h3>
+
+     <tr>
+      <input placeholder="ユーザーネーム" type="text" name="name">
+    </tr>
+
+    <tr>
+      <input placeholder="画像" type="text" name="image">
+    </tr>
+    
+    <tr>
+      <textarea cols="30" name="企画詳細" placeholder="text" rows="10"></textarea>
+    </tr>
+    <input type="submit" value="SENT">
+
+  <% end %>
+</div>
+
+</div>
+</div><!-- プラン閉じ -->
+<a class="new-btn" href="http://localhost:3000/frientrips/show">保存する<i class="fa fa-external-link" aria-hidden="true"></i></a>
+</div><!-- 左側閉じ -->
